@@ -37,7 +37,7 @@ export default{
 			list:[],//博客列表
 			meta:{},//博客数量
 			index:1,//页码
-			pageSize:2,//每页显示数量(iview分页simple版本,每页显示数量无法更换,人为写死)
+			pageSize:7,//每页显示数量(iview分页simple版本,每页显示数量无法更换,人为写死)
 			loading:true,//加载状态
 			color:"#5CACEE",//加载项颜色
 			size:"8px"//加载项尺寸
