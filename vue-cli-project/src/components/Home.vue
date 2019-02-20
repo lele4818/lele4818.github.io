@@ -3,9 +3,10 @@
 		<div class="top">
 			<div class="pic"></div>
 			<div class="info">
-				<h1>Tree
-					<a href="https://github.com/lele4818" target="_blank" class="link">
-						<i class="icon"></i>
+				<h1>
+					<a class="link_a" @click="showDrawer=true">Tree</a>
+					<a href="https://github.com/lele4818" target="_blank" class="link_a">
+						<Icon type="logo-github" />
 					</a>
 				</h1>
 				<p class="tag">some notes for growing up...</p>
@@ -19,6 +20,12 @@
 			</li>
 		</ul>
 		<iview-page :meta='meta' @getIndex="getIndex" :size='pageSize'></iview-page>
+		<Drawer title="Intro" placement="left" :closable="false" v-model="showDrawer">
+			<div class="spin-wrapper">
+				<p># 一个渴望不断成长的前端爱好者</p>
+				<Spin></Spin>
+			</div>
+		</Drawer>
 	</div>
 </template>
 
@@ -40,7 +47,8 @@ export default{
 			pageSize:7,//每页显示数量(iview分页simple版本,每页显示数量无法更换,人为写死)
 			loading:true,//加载状态
 			color:"#5CACEE",//加载项颜色
-			size:"8px"//加载项尺寸
+			size:"8px",//加载项尺寸
+			showDrawer:false//侧栏抽屉
 		}
 	},
 	methods:{
@@ -93,9 +101,8 @@ export default{
 	#home .link{
 		font-size: 18px;
 		color: #2c3e50;
-		text-decoration: none;
 	}
-	#home .link:hover{
+	#home .link:hover,.info a:hover{
 		color: #409eff!important;
 	}
 	#home .date{
@@ -121,27 +128,32 @@ export default{
 		margin-top: 25px !important;
 		margin-bottom: 25px !important;
 	}
+	.info a{
+		color: #2c3e50
+	}
+	.info .drawerSpan{
+		cursor: pointer;
+	}
 	.info h1{
 		line-height: 27px;
 		display: inline-flex;
 	}
-	.info h1 a{
+	.info h1 a:last-child{
 		margin-left: 15px;
-	}
-	.icon{
-		display: inline-block;
-		width: 30px;
-		height: 30px;
-		background-image: url(../assets/github.png);
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-position: center;
-	}
-	.icon :hover{
-		background-color:red ;
 	}
 	#home .tag{
 		color: #9a9a9a;
+	}
+	.spin-wrapper{
+		width: 100%;
+		height: 95%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	.spin-wrapper p{
+		margin-bottom: 30px;
 	}
 	.loading-style{
 		text-align: center;
