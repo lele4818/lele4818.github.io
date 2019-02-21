@@ -50,8 +50,10 @@ html,body{
 	height: 10%;
 	flex-wrap: wrap;
 	vertical-align: middle;
-	margin-top: 30px;
 	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 #app .butter-logo{
 	margin-left: 15px;
