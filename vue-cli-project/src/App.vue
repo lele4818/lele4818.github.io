@@ -64,13 +64,14 @@ html,body{
 }
 #app .wrapperDiv{
 	position: relative;
-	padding-top: 50px;
+	padding-top: 30px;
 }
 #app .wrapperDiv,footer{
 	margin: 0 auto;
 }
 #app .wrapperDiv{
 	height: 90%;
+	width: 100%;
 }
 ::-webkit-scrollbar  
 {  

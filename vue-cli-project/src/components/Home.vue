@@ -132,6 +132,9 @@ export default{
 	#home ul{
 		height: 50%;
 		overflow: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 	.info a{
 		color: #2c3e50

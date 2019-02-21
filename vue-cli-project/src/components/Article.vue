@@ -1,6 +1,9 @@
 <template>
 	<div id="article" v-cloak>
-		<h1>{{content.title}}</h1>
+		<router-link class="back-btn" to="/">
+			<Icon type="md-arrow-round-back" /> Back
+		</router-link>
+		<h1 class="title-h1">{{content.title}}</h1>
 		<div v-html="content.body" class="content" v-highlight></div>
 	</div>
 </template>
@@ -39,11 +42,9 @@ body{
 	margin: 0;
 }
 #article{
-	width: 800px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    margin-top: 15px;
-	height: 90%;
+    padding-left: 30px;
+	padding-right: 30px;
+	height: 100%;
 	overflow-y: auto;
 }
 .content{
@@ -58,5 +59,15 @@ body{
 }
 .content h1{
 	margin-bottom: 15px;
+}
+.back-btn{
+	color: #2c3e50;
+	font-size: 16px;
+}
+.back-btn:hover {
+    color: #57a3f3;
+}
+.title-h1{
+	margin-top: 20px;
 }
 </style>
