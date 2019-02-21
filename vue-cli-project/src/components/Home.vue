@@ -47,7 +47,7 @@ export default{
 			pageSize:7,//每页显示数量(iview分页simple版本,每页显示数量无法更换,人为写死)
 			loading:true,//加载状态
 			color:"#5CACEE",//加载项颜色
-			size:"8px",//加载项尺寸
+			size:"10px",//加载项尺寸
 			showDrawer:false//侧栏抽屉
 		}
 	},
@@ -136,6 +136,12 @@ export default{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+	}
+	#home .loading-style{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 50%
 	}
 	.info a{
 		color: #2c3e50
