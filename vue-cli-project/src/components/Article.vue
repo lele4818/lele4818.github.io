@@ -1,7 +1,7 @@
 <template>
 	<div id="article" v-cloak>
 		<router-link class="back-btn" to="/">
-			<Icon type="md-arrow-round-back" /> Back
+			<Icon type="md-arrow-round-back" /> Go back
 		</router-link>
 		<h1 class="title-h1">{{content.title}}</h1>
 		<div v-html="content.body" class="content" v-highlight></div>
@@ -64,6 +64,7 @@ body{
 .back-btn{
 	color: #2c3e50;
 	font-size: 16px;
+	text-decoration: underline;
 }
 .back-btn:hover {
     color: #57a3f3;
