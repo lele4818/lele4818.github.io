@@ -93,6 +93,7 @@ export default{
 	#home{
 		margin: 0 auto;
 		height: 100%;
+		position: relative;
 	}
 	#home li{
 		line-height: 40px;
