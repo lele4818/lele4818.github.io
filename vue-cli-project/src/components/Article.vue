@@ -44,6 +44,7 @@ body{
 #article{
     padding-left: 30px;
 	padding-right: 30px;
+	margin-right: 15px;
 	height: 100%;
 	overflow-y: auto;
 }

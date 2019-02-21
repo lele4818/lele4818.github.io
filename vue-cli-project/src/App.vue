@@ -75,21 +75,21 @@ html,body{
 }
 ::-webkit-scrollbar  
 {  
-    width: 5px;  /*滚动条宽度*/
+    width: 10px;  /*滚动条宽度*/
     height: 5px;  /*滚动条高度*/
 }  
   
 /*定义滚动条轨道 内阴影+圆角*/  
 ::-webkit-scrollbar-track  
 {  
-    border-radius: 2.5px;  /*滚动条的背景区域的圆角*/
+    border-radius: 5px;  /*滚动条的背景区域的圆角*/
     background-color: #FFFFFF;/*滚动条的背景颜色*/  
 }  
   
 /*定义滑块 内阴影+圆角*/  
 ::-webkit-scrollbar-thumb  
 {  
-    border-radius: 2.5px;  /*滚动条的圆角*/
+    border-radius: 5px;  /*滚动条的圆角*/
     background-color: #D3D3D3;  /*滚动条的背景颜色*/
 }
 </style>
