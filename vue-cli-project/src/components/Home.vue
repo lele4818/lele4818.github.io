@@ -92,7 +92,7 @@ export default{
 	}
 	#home{
 		margin: 0 auto;
-		margin-top: 50px;
+		height: 100%;
 	}
 	#home li{
 		line-height: 40px;
@@ -113,6 +113,7 @@ export default{
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
+		height: 40%;
 	}
 	#home .pic{
 		width: 150px;
@@ -127,6 +128,10 @@ export default{
 	#home .info{
 		margin-top: 25px !important;
 		margin-bottom: 25px !important;
+	}
+	#home ul{
+		height: 50%;
+		overflow: auto;
 	}
 	.info a{
 		color: #2c3e50

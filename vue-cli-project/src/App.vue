@@ -30,7 +30,7 @@ export default {
   display: none;
 }
 html,body{
- height: 98%;
+ height: 100%;
 }
 #app{
 	font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
@@ -47,6 +47,7 @@ html,body{
 	vertical-align: middle;
 }
 #app footer{
+	height: 10%;
 	flex-wrap: wrap;
 	vertical-align: middle;
 	margin-top: 30px;
@@ -60,12 +61,13 @@ html,body{
 }
 #app .wrapperDiv{
 	position: relative;
+	padding-top: 50px;
 }
 #app .wrapperDiv,footer{
 	margin: 0 auto;
 }
 #app .wrapperDiv{
-	height: 100%;
+	height: 90%;
 }
 ::-webkit-scrollbar  
 {  

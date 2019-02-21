@@ -26,10 +26,11 @@
 	  display: none;
 	}
 	#page{
-		position: absolute;
-		bottom: 0;
 		width: 100%;
     text-align: center;
+		height: 10%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
-		
 </style>
