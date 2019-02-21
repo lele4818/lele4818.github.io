@@ -53,10 +53,12 @@ export default{
 	},
 	methods:{
 		getData(index,size){
+			document.body.style.cursor = 'wait';
 			butter.butter.post.list({page: index, page_size: size}).then((response) =>{
 				this.list = response.data.data;
 				this.meta = response.data.meta;
 				this.loading = false;
+				document.body.style.cursor = 'default';
 			});
 		},
 		getDate(time){

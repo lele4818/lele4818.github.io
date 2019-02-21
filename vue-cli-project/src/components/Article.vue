@@ -28,9 +28,11 @@ import PulseLoader from 'vue-spinner/src/PulseLoader.vue'
 		},
 		methods:{
 			getArticle(){
+				document.body.style.cursor = 'wait';
 				butter.butter.post.retrieve(this.$route.params.slug).then((res) => {
 					this.loading = false;
 					this.content = res.data.data;
+					document.body.style.cursor = 'default';
 				}).catch((res) => {
 					console.log(res)
 				})
